@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercice 4 - Correction de formulaire</title>
+</head>
+<body>
+
+  <form method="post">
+
+    <!-- ERREUR 1 : L'attribut id ("name") ne correspondait pas à l'attribut for ("nom") du label -->
+    <label for="nom">Nom</label>
+    <input type="text" id="nom" name="nom">
+
+    <br><br>
+
+    <!-- ERREUR 2 : L'attribut name était manquant sur l'input prénom -->
+    <label for="prenom">Prénom</label>
+    <input type="text" id="prenom" name="prenom">
+
+    <br><br>
+
+    <!-- ERREUR 3 : Le type de l'input doit être "email" au lieu de "text" pour la validation -->
+    <label for="email">E-mail</label>
+    <input type="email" id="email" name="email">
+
+    <br><br>
+
+    <!-- ERREUR 4 : Le type de l'input doit être "password" au lieu de "text" pour masquer la saisie -->
+    <label for="mdp">Mot de passe</label>
+    <input type="password" id="mdp" name="mdp">
+
+    <br><br>
+
+    <p>Formule :</p>
+    <!-- ERREUR 5 : Les attributs name ("formule1" et "formule2") étaient différents. Ils doivent être identiques pour former un groupe de boutons radio. De plus, l'id "f1" était écrit "fl" (lettre l au lieu du chiffre 1) -->
+    <input type="radio" id="f1" name="formule" value="mensuelle">
+    <label for="f1">Mensuelle</label>
+
+    <input type="radio" id="f2" name="formule" value="annuelle">
+    <label for="f2">Annuelle</label>
+
+    <br><br>
+
+    <!-- ERREUR 6 : L'attribut name était manquant sur la balise <select> -->
+    <label for="ville">Ville</label>
+    <select id="ville" name="ville">
+      <option value="rabat">Rabat</option>
+      <option value="sale">Salé</option>
+    </select>
+
+    <br><br>
+
+    <!-- ERREUR 7 : type="textarea" n'existe pas en HTML, il faut utiliser la balise <textarea> -->
+    <label for="msg">Message</label>
+    <textarea id="msg" name="message"></textarea>
+
+    <br><br>
+
+    <!-- ERREUR 8 : Le bouton avait un type="reset" au lieu de type="submit" pour envoyer le formulaire -->
+    <button type="submit">Envoyer</button>
+
+  </form>
+
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Zoro, un assistant intelligent pour aider les étudiants à apprendre, réviser et comprendre">
+    <title>Zoro - Assistant intelligent</title>
+</head>
+<body>
+
+    <header>
+        <img src="avatar.png" alt="Avatar de Zoro" width="80">
+        <h1>Zoro</h1>
+    </header>
+
+    <main>
+        <section>
+            <p>
+                Bonjour, je suis Zoro, un assistant intelligent qui aide
+                les étudiants à apprendre, réviser et comprendre leurs cours.
+            </p>
+        </section>
+
+        <section>
+            <h2>Ce que je peux faire</h2>
+            <ul>
+                <li>Expliquer les cours</li>
+                <li>Aider à faire les exercices</li>
+                <li>Créer des résumés</li>
+                <li>Préparer des quiz</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Conversation</h2>
+            <p><strong>Vous :</strong> Bonjour Zoro !</p>
+            <p><strong>Zoro :</strong> Bonjour ! Comment puis-je vous aider ?</p>
+
+            <p><strong>Vous :</strong> Peux-tu m'aider avec HTML ?</p>
+            <p><strong>Zoro :</strong> Bien sûr ! Je peux t'expliquer les balises HTML.</p>
+
+            <p><strong>Vous :</strong> Qu'est-ce qu'une balise h1 ?</p>
+            <p><strong>Zoro :</strong> La balise h1 sert à définir le titre principal d'une page.</p>
+
+            <form method="post">
+                <label for="message">Votre message :</label><br><br>
+                <input 
+                    type="text" 
+                    id="message" 
+                    name="message" 
+                    maxlength="300" 
+                    placeholder="Écrivez votre message..." 
+                    required
+                >
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+    </main>
+
+    <aside>
+        <h2>FAQ</h2>
+        <table border="1">
+            <caption>Questions fréquentes</caption>
+            <thead>
+                <tr>
+                    <th>Question</th>
+                    <th>Réponse</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Qu'est-ce que Zoro ?</td>
+                    <td>Un assistant intelligent pour aider les étudiants</td>
+                </tr>
+                <tr>
+                    <td>Que peut faire Zoro ?</td>
+                    <td>Il peut expliquer les cours</td>
+                </tr>
+                <tr>
+                    <td>Peut-il préparer des quiz ?</td>
+                    <td>Oui, il peut préparer des quiz pour réviser.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br>
+
+        <form method="post">
+            <fieldset>
+                <legend>Votre avis</legend>
+
+                <p>Note :</p>
+                <input type="radio" id="note1" name="note" value="1" required>
+                <label for="note1">1</label>
+
+                <input type="radio" id="note2" name="note" value="2">
+                <label for="note2">2</label>
+
+                <input type="radio" id="note3" name="note" value="3">
+                <label for="note3">3</label>
+
+                <input type="radio" id="note4" name="note" value="4">
+                <label for="note4">4</label>
+
+                <input type="radio" id="note5" name="note" value="5">
+                <label for="note5">5</label>
+
+                <br><br>
+
+                <label for="commentaire">Commentaire :</label><br>
+                <textarea 
+                    id="commentaire" 
+                    name="commentaire" 
+                    rows="3" 
+                    maxlength="200" 
+                    placeholder="Un commentaire ?"
+                ></textarea>
+
+                <br><br>
+
+                <button type="submit">Envoyer mon avis</button>
+            </fieldset>
+        </form>
+    </aside>
+
+    <footer>
+        <p>Assistant disponible 24h/24</p>
+    </footer>
+
+</body>
+</html>
