@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réservation - Restaurant Dar Zitoune</title>
+</head>
+<body>
+    <h1>Réservation - Restaurant Dar Zitoune</h1>
+    <form method="post">
+
+    <fieldset>
+        <legend> Coordonnées</legend>
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" minlength="2" required>
+        <br><br>
+        <label for="email">E-mail</label>
+        <input type="text" id="nom" name="email" required>
+        <br><br>
+        <label for="numero de telephone">Phone number</label>
+        <input type="tel" id="numero de telephone" name="numero de telephone" pattern="^(05|06|07)[0-9]{8}$" title="Le numéro doit contenir 10 chiffres et commencer par 05, 06 ou 07">
+        <fieldset>
+            <legend>Réservation </legend>
+            <label for="date">Date</label>
+            <input type="date" id="date" name="date_reservation" required>
+            <br>
+            <label for="heure_res">Heure :</label>
+  <input 
+    type="time" 
+    id="heure_res" 
+    name="heure_reservation" 
+    min="12:00" 
+    max="23:00" 
+    required
+  >
+
+  <br><br>
+  <label for="personne">Nombre de personnes</label>
+  <input type="number" id="personne" name="nombre _personnes" min="1" max ="12" required>
+  <input type ="radio" id="salle" name="emplacement" value="interieur">
+  <label for="salle">Salle interieur</label>
+  <input type="radio" id="teraase" name="emplacement" value="terasse">
+  <label for ="salle">terasse</label>
+  <label>Occasion :</label>
+
+<input type="radio" id="aucune" name="occasion" value="aucune" checked>
+<label for="aucune">-- Aucune --</label>
+
+<input type="radio" id="anniversaire" name="occasion" value="anniversaire">
+<label for="anniversaire">Anniversaire</label>
+
+<input type="radio" id="affaires" name="occasion" value="affaires">
+<label for="affaires">Repas d'affaires</label>
+
+<input type="radio" id="famille" name="occasion" value="famille">
+<label for="famille">Fête de famille</label>
+<label>Options</label>
+<input type="checkbox" id="Chaise bébé" name="chaise bebe">
+<label for="chaise bebe">Chaise bebe</label>
+<input type="checkbox" id="fauteuil",>
+<label for="fauteuil ">Accès pour fauteuil roulant</label>
+<input type="checkbox" id="menu" name="menu">
+<label for="menu">menu vegetarian</label>
+<label for="Demande particulières"></label>
+<textarea id="demande" name="Demandes" rows="4" maxlength="200"
+placeholder="Précisez vos besoins particuliers..."></textarea>
+<input type="checkbox" id="conditions" name="conditions">
+
+<label for="conditions"> J’accepte les conditions de réservation </label>
+<button type="submit">Reservez</button>
+<button type="reset">Effacer</button>
+</fieldset>
+</form>
+        
+</body>
+</html>
